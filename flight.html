@@ -1,0 +1,574 @@
+<!Doctype HTML>
+<html lang="en-US">
+<head>
+<meta charset = "UTF-8">
+<meta name="HandheldFriendly" content="true">
+<meta name="viewport" content="width=device-width, height=device-height, user-scalable=yes" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<link rel = 'stylesheet' href = 'assets/css/w3css.css'>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel = 'stylesheet' href = 'assets/css/template.css'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<section class = 'navigation'>
+<div class = 'row'>
+ <div class = 'col-lg-8 col-md-8 col-sm-10 col-xs-10' style = 'margin-top:5px;margin-bottom:5px'>
+    <span style = 'margin-left:60px'>My account </span>                                       
+     <span class = 'dropdown' style = 'margin-left:10px'>
+      <span class = 'dropdown-toggle' data-toggle = 'dropdown'>
+      Language<span class = 'caret'></span>  
+      </span>
+      <ul class = 'dropdown-menu'>
+          <li><a href = '#'>English</a></li>
+          <li><a href = '#'>Hindi</a></li>
+          <li><a href = '#'>Marathi</a></li>
+          <li><a href = '#'>Gujrati</a></li>
+          <li><a href = '#'>Telugu</a></li>
+      </ul>  
+    </span>
+</div>
+<div class = 'col-lg-4 col-md-4 col-sm-10 col-xs-10' style = 'margin-top:5px;'>
+   <span style = 'margin-right:30px'>Purchase</span>
+   <span class = 'form' data-toggle = 'modal' data-target = '#login'>Login </span>
+     <div class = 'modal fade' id = 'login' role = 'dialog'>
+         <div class = 'modal-dialog modal-sm'>
+           <div class = 'modal-content'>
+               <div class = 'modal-header'>
+                 <h4 class = 'text-center modal-title'>Login Form</h4>
+               </div>
+               <div class = 'modal-body'>
+                   <button class = 'btn btn-primary' style = 'width:100%'>Login using Facebook</button>
+                   <button class = 'btn btn-danger' style = 'width:100%;margin-top:10px'>Login using Google</button>
+                   <div class = 'text'>Or</div>
+                    <div class = 'input-group'>
+                      <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span><input type="email" class="form-control" placeholder="Email">
+                   </div>
+                   <div class = 'input-group'>
+                      <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span><input type="password" class="form-control" name="password" placeholder="Password">
+                   </div>
+               </div>
+               <div class = 'modal-footer'>
+               <button data-dismiss = 'modal' class = 'btn btn-success submit'>Submit</button>
+               </div>
+             </div>
+         </div>
+     </div>
+    <span class = 'form' data-toggle = 'modal' data-target = '#register'>Register </span>
+      <div class = 'modal fade' id = 'register' role ='dialog'>
+        <div class = 'modal-dialog modal-sm'>
+            <div class = 'modal-content'>
+                <div class = 'modal-header'>
+                 <h4 class = 'modal-title text-center'>Register</h4>
+                </div>
+                <div class = 'modal-body'>
+                    <div class = 'input-group'>
+                    <span class = 'input-group-addon'><i class = 'glyphicon glyphicon-user'></i></span>
+                    <input type = 'text' class = 'form-control' placeholder= 'First Name'>                 
+                    </div>
+                    <div class = 'input-group'>
+                    <span class = 'input-group-addon'><i class = 'glyphicon glyphicon-user'></i></span>
+                    <input type = 'text' class = 'form-control' placeholder= 'Last Name'>                 
+                    </div>
+                    <div class = 'input-group'>
+                    <span class = 'input-group-addon'><i class = 'glyphicon glyphicon-envelope'></i></span>
+                    <input type = 'email' class = 'form-control' placeholder= 'Email'>                 
+                    </div>
+                    <div class = 'input-group'>
+                    <span class = 'input-group-addon'><i class = 'glyphicon glyphicon-lock'></i></span>
+                    <input type = 'password' class = 'form-control' placeholder= 'Password'>                 
+                    </div>
+                </div>
+                <div class = 'modal-footer'>
+                    <button class = 'btn btn-success text-center submit' data-dismiss = 'modal'>Submit</button>
+                </div>
+            </div>
+        </div>
+      </div>
+</div>
+</div>    
+</section>
+<nav class = 'navbar navbar-inverse' data-spy = 'affix' data-offset-top = '197'>
+    <ul class = 'nav navbar-nav'>
+        <li><a href = 'template.html' class = 'links'>Home</a></li>
+        <li><a class = 'dropdown-toggle links' data-toggle = 'dropdown' href="#">Hotels<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="hotels.html" class = 'links'>Listings</a></li>
+              <li><a href="details_hotel.html" class = 'links'>Details Page</a></li>
+              <li><a href="bookings.html" class = 'links'>Bookings Page</a></li>
+            </ul>
+        </li>
+        <li><a class = 'dropdown-toggle links' data-toggle = 'dropdown' href="#">Flights<span class = 'caret'></span></a>
+            <ul class = 'dropdown-menu'>
+                <li><a href = 'flight.html' class = 'links'>Listings</a></li>
+                <li><a href = 'details_flight.html' class = 'links'>Details Page</a></li>
+                <li><a href="bookings_flight.html" class = 'links'>Bookings Page</a></li>
+            </ul>
+        </li>
+        <li><a class = 'dropdown-toggle links' data-toggle = 'dropdown' href="#">Tours<span class = 'caret'></span></a>
+           <ul class = 'dropdown-menu'>
+                <li><a href = 'tours.html' class = 'links'>Listings</a></li>
+                <li><a href = 'details_tour.html' class = 'links'>Details Page</a></li>
+                <li><a href="bookings_tour.html" class = 'links'>Bookings Page</a></li>
+            </ul>
+        </li>
+        <li><a href="template.html#about" class = 'links'>About Us </a></li>
+        <li><a href="#contact" class = 'links'>Contact Us</a></li>
+    </ul>
+    <span class = 'logo'><span style = 'font-size:70px'>&Tscr;</span>RAVEL-<span style = 'font-size:55px'>&Iscr;</span><img src = 'assets/images/travel.png' class = 'icon'/></span>
+    <section class = 'hotel_search'><h3 style = 'margin-top:5px'>Flight Search Results</h3></section>
+</nav>
+<section>
+   <div class = 'row'>
+    <div class = 'col-lg-4 col-md-4 col-sm-10 col-xs-12'>
+        <div class="panel-group" id="accordion" style = 'margin-left:50px;width:300px;'>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title" >
+                        <span style = 'font-weight:bolder;margin-left:40px'>Price</span>
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse1" >
+                         <img src = 'assets/images/plus.png' style = 'margin-left:150px;'></a>
+                    </h4>
+                </div>
+                <div id="collapse1" class="panel-collapse collapse in">
+                    <div class="panel-body" style = 'color:navy'>
+                        <input type = 'radio' name = 'price_low' value = 'low'>Below Rs30,000<br>
+                        <input type = 'radio' name = 'price_medium' value = 'med'>Rs30,000 to Rs60,000<br>
+                        <input type = 'radio' name = 'price_high' value = 'high'>Rs60,000 above<br>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title" >
+                        <span style = 'font-weight:bolder;margin-left:40px'>Flight Times</span>
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse2" >
+                         <img src = 'assets/images/plus.png' style = 'margin-left:95px;'></a>
+                    </h4>
+                </div>
+                <div id="collapse2" class="panel-collapse collapse in">
+                    <div class="panel-body" style = 'color:navy'>
+                        <input type = 'radio'  value = 'morning'>Morning 9.00 a.m.<br>
+                        <input type = 'radio'  value = 'afternoon'>Afternoon 13.00<br>
+                        <input type = 'radio'  value = 'evening'>Evening 18.00<br>
+                        <input type = 'radio'  value = 'night'>Night 22.00<br>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title" >
+                        <span style = 'font-weight:bolder;margin-left:40px'>Flight Stops</span>
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse3" >
+                         <img src = 'assets/images/plus.png' style = 'margin-left:95px;'></a>
+                    </h4>
+                </div>
+                <div id="collapse3" class="panel-collapse collapse in">
+                    <div class="panel-body" style = 'color:navy'>
+                        <input type = 'radio'  value = 'stop1'>1 stop<br>
+                        <input type = 'radio'  value = 'stop2'>2 stops<br>
+                        <input type = 'radio' value = 'stop3'>3 stops<br>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title" >
+                        <span style = 'font-weight:bolder;margin-left:40px'>Airlines</span>
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse4" >
+                         <img src = 'assets/images/plus.png' style = 'margin-left:128px;'></a>
+                    </h4>
+                </div>
+                <div id="collapse4" class="panel-collapse collapse in">
+                    <div class="panel-body" style = 'color:navy'>
+                        <input type = 'radio'  value = 'major_air'>Major Airlines<br>
+                        <input type = 'radio'  value = 'us_air'>US Airlines<br>
+                        <input type = 'radio' value = 'af'>Air France<br>
+                        <input type = 'radio' value = 'luf'>Lufthansa<br>
+                        <input type = 'radio' value = 'emi_dub'>Emirates Dubai<br>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title" >
+                        <span style = 'font-weight:bolder;margin-left:40px'>Flight Type</span>
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse4" >
+                         <img src = 'assets/images/plus.png' style = 'margin-left:100px;'></a>
+                    </h4>
+                </div>
+                <div id="collapse4" class="panel-collapse collapse in">
+                    <div class="panel-body" style = 'color:navy'>
+                        <input type = 'radio'  value = 'business'>Business<br>
+                        <input type = 'radio'  value = 'first'>First Class<br>
+                        <input type = 'radio' value = 'eco'>Economic<br>
+                        <input type = 'radio' value = 'pre_eco'>Premium Economic<br>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class = 'col-lg-8 col-md-8 col-sm-10 col-xs-10'>
+        <div class = 'w3-card-4 w3-white card_flight' style = 'width:99%'>
+             <div class = 'row'>
+                <div class = 'col-lg-3 col-md-3 col-sm-3 col-xs-6 '>
+                    <img src = 'assets/images/air_india.jpg' class = 'flight_img'>
+                </div>
+                <div class = 'col-lg-7 col-md-7 col-sm-9 col-xs-9'>
+                  <h3 class = 'heading_flight'>Air India
+                      <span class = 'caption_flight'>From India to Mauritius</span>
+                  </h3>
+                  <div class = 'row'>
+                      <div class = 'col-lg-4 col-md-4 col-sm-8 col-xs-8'>
+                          <h4 class = 'head_flight'>Departure Time</h4>
+                          <h5 class = 'time_flight'>At 13:12</h5>
+                      </div>
+                      <div class = 'col-lg-4 col-md-4 col-sm-8 col-xs-8'>
+                          <h4 class = 'head_flight'>Arrival Time</h4>
+                          <h5 class = 'time_flight'>At 19:32</h5>
+                      </div>
+                      <div class = 'col-lg-4 col-md-4 col-sm-8 col-xs-8'>
+                          <h4 class = 'head_flight'>Total Time</h4>
+                          <h5 class = 'time_flight'>6hrs 30mins</h5>
+                      </div>
+                  </div>
+                  <div class = 'row'>
+                      <div class = 'col-lg-4 col-md-4 col-sm-8 col-xs-8'>
+                          <h4 class = 'head_flight'>Departure Time</h4>
+                          <h5 class = 'time_flight'>At 21:12</h5>
+                      </div>
+                      <div class = 'col-lg-4 col-md-4 col-sm-8 col-xs-8'>
+                          <h4 class = 'head_flight'>Arrival Time</h4>
+                          <h5 class = 'time_flight'>At 03:32</h5>
+                      </div>
+                      <div class = 'col-lg-4 col-md-4 col-sm-8 col-xs-8'>
+                          <h4 class = 'head_flight'>Total Time</h4>
+                          <h5 class = 'time_flight'>6hrs 30mins</h5>
+                      </div>
+                  </div>
+                  <div class = 'row'>
+                      <div class = 'col-lg-4 col-md-4 col-sm-8 col-xs-8'>
+                          <h4 class = 'head_flight'>Departure Time</h4>
+                          <h5 class = 'time_flight'>At 18:12</h5>
+                      </div>
+                      <div class = 'col-lg-4 col-md-4 col-sm-8 col-xs-8'>
+                          <h4 class = 'head_flight'>Arrival Time</h4>
+                          <h5 class = 'time_flight'>At 00:32</h5>
+                      </div>
+                      <div class = 'col-lg-4 col-md-4 col-sm-8 col-xs-8'>
+                          <h4 class = 'head_flight'>Total Time</h4>
+                          <h5 class = 'time_flight'>6hrs 30mins</h5>
+                      </div>
+                  </div>
+                  
+                </div>
+                <div class = 'col-lg-2 col-md-2 col-sm-8 col-xs-8'>
+                    <h4 class = 'price'>Price/person</h4>
+                    <h5 class = 'price_val'>Rs 30,000</h5>
+                    <div class = 'button button_flight'><button>Book Now</button></div>
+                </div>
+            </div>
+        </div>
+        <div class = 'w3-card-4 w3-white card_flight' style = 'width:99%'>
+             <div class = 'row'>
+                <div class = 'col-lg-3 col-md-3 col-sm-3 col-xs-6 '>
+                    <img src = 'assets/images/indian_air.jpg' class = 'flight_img'>
+                </div>
+                <div class = 'col-lg-7 col-md-7 col-sm-9 col-xs-9'>
+                  <h3 class = 'heading_flight'>Indian Airlines
+                      <span class = 'caption_flight'>From India to Mauritius</span>
+                  </h3>
+                  <div class = 'row'>
+                      <div class = 'col-lg-4 col-md-4 col-sm-8 col-xs-8'>
+                          <h4 class = 'head_flight'>Departure Time</h4>
+                          <h5 class = 'time_flight'>At 13:12</h5>
+                      </div>
+                      <div class = 'col-lg-4 col-md-4 col-sm-8 col-xs-8'>
+                          <h4 class = 'head_flight'>Arrival Time</h4>
+                          <h5 class = 'time_flight'>At 19:32</h5>
+                      </div>
+                      <div class = 'col-lg-4 col-md-4 col-sm-8 col-xs-8'>
+                          <h4 class = 'head_flight'>Total Time</h4>
+                          <h5 class = 'time_flight'>6hrs 30mins</h5>
+                      </div>
+                  </div>
+                  <div class = 'row'>
+                      <div class = 'col-lg-4 col-md-4 col-sm-8 col-xs-8'>
+                          <h4 class = 'head_flight'>Departure Time</h4>
+                          <h5 class = 'time_flight'>At 21:12</h5>
+                      </div>
+                      <div class = 'col-lg-4 col-md-4 col-sm-8 col-xs-8'>
+                          <h4 class = 'head_flight'>Arrival Time</h4>
+                          <h5 class = 'time_flight'>At 03:32</h5>
+                      </div>
+                      <div class = 'col-lg-4 col-md-4 col-sm-8 col-xs-8'>
+                          <h4 class = 'head_flight'>Total Time</h4>
+                          <h5 class = 'time_flight'>6hrs 30mins</h5>
+                      </div>
+                  </div>
+                  <div class = 'row'>
+                      <div class = 'col-lg-4 col-md-4 col-sm-8 col-xs-8'>
+                          <h4 class = 'head_flight'>Departure Time</h4>
+                          <h5 class = 'time_flight'>At 18:12</h5>
+                      </div>
+                      <div class = 'col-lg-4 col-md-4 col-sm-8 col-xs-8'>
+                          <h4 class = 'head_flight'>Arrival Time</h4>
+                          <h5 class = 'time_flight'>At 00:32</h5>
+                      </div>
+                      <div class = 'col-lg-4 col-md-4 col-sm-8 col-xs-8'>
+                          <h4 class = 'head_flight'>Total Time</h4>
+                          <h5 class = 'time_flight'>6hrs 30mins</h5>
+                      </div>
+                  </div>
+                  
+                </div>
+                <div class = 'col-lg-2 col-md-2 col-sm-8 col-xs-8'>
+                    <h4 class = 'price'>Price/person</h4>
+                    <h5 class = 'price_val'>Rs 40,000</h5>
+                    <div class = 'button button_flight'><button>Book Now</button></div>
+                </div>
+            </div>
+        </div>
+        <div class = 'w3-card-4 w3-white card_flight' style = 'width:99%'>
+             <div class = 'row'>
+                <div class = 'col-lg-3 col-md-3 col-sm-3 col-xs-6 '>
+                    <img src = 'assets/images/emi_air.jpg' class = 'flight_img'>
+                </div>
+                <div class = 'col-lg-7 col-md-7 col-sm-9 col-xs-9'>
+                  <h3 class = 'heading_flight'>Emirates Dubai
+                      <span class = 'caption_flight'>From Dubai to India</span>
+                  </h3>
+                  <div class = 'row'>
+                      <div class = 'col-lg-4 col-md-4 col-sm-8 col-xs-8'>
+                          <h4 class = 'head_flight'>Departure Time</h4>
+                          <h5 class = 'time_flight'>At 13:12</h5>
+                      </div>
+                      <div class = 'col-lg-4 col-md-4 col-sm-8 col-xs-8'>
+                          <h4 class = 'head_flight'>Arrival Time</h4>
+                          <h5 class = 'time_flight'>At 19:32</h5>
+                      </div>
+                      <div class = 'col-lg-4 col-md-4 col-sm-8 col-xs-8'>
+                          <h4 class = 'head_flight'>Total Time</h4>
+                          <h5 class = 'time_flight'>6hrs 30mins</h5>
+                      </div>
+                  </div>
+                  <div class = 'row'>
+                      <div class = 'col-lg-4 col-md-4 col-sm-8 col-xs-8'>
+                          <h4 class = 'head_flight'>Departure Time</h4>
+                          <h5 class = 'time_flight'>At 21:12</h5>
+                      </div>
+                      <div class = 'col-lg-4 col-md-4 col-sm-8 col-xs-8'>
+                          <h4 class = 'head_flight'>Arrival Time</h4>
+                          <h5 class = 'time_flight'>At 03:32</h5>
+                      </div>
+                      <div class = 'col-lg-4 col-md-4 col-sm-8 col-xs-8'>
+                          <h4 class = 'head_flight'>Total Time</h4>
+                          <h5 class = 'time_flight'>6hrs 30mins</h5>
+                      </div>
+                  </div>
+                  <div class = 'row'>
+                      <div class = 'col-lg-4 col-md-4 col-sm-8 col-xs-8'>
+                          <h4 class = 'head_flight'>Departure Time</h4>
+                          <h5 class = 'time_flight'>At 18:12</h5>
+                      </div>
+                      <div class = 'col-lg-4 col-md-4 col-sm-8 col-xs-8'>
+                          <h4 class = 'head_flight'>Arrival Time</h4>
+                          <h5 class = 'time_flight'>At 00:32</h5>
+                      </div>
+                      <div class = 'col-lg-4 col-md-4 col-sm-8 col-xs-8'>
+                          <h4 class = 'head_flight'>Total Time</h4>
+                          <h5 class = 'time_flight'>6hrs 30mins</h5>
+                      </div>
+                  </div>
+                  
+                </div>
+                <div class = 'col-lg-2 col-md-2 col-sm-8 col-xs-8'>
+                    <h4 class = 'price'>Price/person</h4>
+                    <h5 class = 'price_val'>Rs 45,000</h5>
+                    <div class = 'button button_flight'><button>Book Now</button></div>
+                </div>
+            </div>
+        </div>
+        <div class = 'w3-card-4 w3-white card_flight' style = 'width:99%'>
+             <div class = 'row'>
+                <div class = 'col-lg-3 col-md-3 col-sm-3 col-xs-6 '>
+                    <img src = 'assets/images/sl_air.jpg' class = 'flight_img'>
+                </div>
+                <div class = 'col-lg-7 col-md-7 col-sm-9 col-xs-9'>
+                  <h3 class = 'heading_flight'>Sri-Lankan Airlines
+                      <span class = 'caption_flight'>From Sri Lanka to Mauritius</span>
+                  </h3>
+                  <div class = 'row'>
+                      <div class = 'col-lg-4 col-md-4 col-sm-8 col-xs-8'>
+                          <h4 class = 'head_flight'>Departure Time</h4>
+                          <h5 class = 'time_flight'>At 13:12</h5>
+                      </div>
+                      <div class = 'col-lg-4 col-md-4 col-sm-8 col-xs-8'>
+                          <h4 class = 'head_flight'>Arrival Time</h4>
+                          <h5 class = 'time_flight'>At 19:32</h5>
+                      </div>
+                      <div class = 'col-lg-4 col-md-4 col-sm-8 col-xs-8'>
+                          <h4 class = 'head_flight'>Total Time</h4>
+                          <h5 class = 'time_flight'>6hrs 30mins</h5>
+                      </div>
+                  </div>
+                  <div class = 'row'>
+                      <div class = 'col-lg-4 col-md-4 col-sm-8 col-xs-8'>
+                          <h4 class = 'head_flight'>Departure Time</h4>
+                          <h5 class = 'time_flight'>At 21:12</h5>
+                      </div>
+                      <div class = 'col-lg-4 col-md-4 col-sm-8 col-xs-8'>
+                          <h4 class = 'head_flight'>Arrival Time</h4>
+                          <h5 class = 'time_flight'>At 03:32</h5>
+                      </div>
+                      <div class = 'col-lg-4 col-md-4 col-sm-8 col-xs-8'>
+                          <h4 class = 'head_flight'>Total Time</h4>
+                          <h5 class = 'time_flight'>6hrs 30mins</h5>
+                      </div>
+                  </div>
+                  <div class = 'row'>
+                      <div class = 'col-lg-4 col-md-4 col-sm-8 col-xs-8'>
+                          <h4 class = 'head_flight'>Departure Time</h4>
+                          <h5 class = 'time_flight'>At 18:12</h5>
+                      </div>
+                      <div class = 'col-lg-4 col-md-4 col-sm-8 col-xs-8'>
+                          <h4 class = 'head_flight'>Arrival Time</h4>
+                          <h5 class = 'time_flight'>At 00:32</h5>
+                      </div>
+                      <div class = 'col-lg-4 col-md-4 col-sm-8 col-xs-8'>
+                          <h4 class = 'head_flight'>Total Time</h4>
+                          <h5 class = 'time_flight'>6hrs 30mins</h5>
+                      </div>
+                  </div>
+                  
+                </div>
+                <div class = 'col-lg-2 col-md-2 col-sm-8 col-xs-8'>
+                    <h4 class = 'price'>Price/person</h4>
+                    <h5 class = 'price_val'>Rs 25,000</h5>
+                    <div class = 'button button_flight'><button>Book Now</button></div>
+                </div>
+            </div>
+        </div>
+        <div class = 'w3-card-4 w3-white card_flight' style = 'width:99%'>
+             <div class = 'row'>
+                <div class = 'col-lg-3 col-md-3 col-sm-3 col-xs-6 '>
+                    <img src = 'assets/images/amer.jpg' class = 'flight_img'>
+                </div>
+                <div class = 'col-lg-7 col-md-7 col-sm-9 col-xs-9'>
+                  <h3 class = 'heading_flight'>American Airlines
+                      <span class = 'caption_flight'>From India to New-York</span>
+                  </h3>
+                  <div class = 'row'>
+                      <div class = 'col-lg-4 col-md-4 col-sm-8 col-xs-8'>
+                          <h4 class = 'head_flight'>Departure Time</h4>
+                          <h5 class = 'time_flight'>At 13:12</h5>
+                      </div>
+                      <div class = 'col-lg-4 col-md-4 col-sm-8 col-xs-8'>
+                          <h4 class = 'head_flight'>Arrival Time</h4>
+                          <h5 class = 'time_flight'>At 1:32</h5>
+                      </div>
+                      <div class = 'col-lg-4 col-md-4 col-sm-8 col-xs-8'>
+                          <h4 class = 'head_flight'>Total Time</h4>
+                          <h5 class = 'time_flight'>12hrs 30mins</h5>
+                      </div>
+                  </div>
+                  <div class = 'row'>
+                      <div class = 'col-lg-4 col-md-4 col-sm-8 col-xs-8'>
+                          <h4 class = 'head_flight'>Departure Time</h4>
+                          <h5 class = 'time_flight'>At 21:12</h5>
+                      </div>
+                      <div class = 'col-lg-4 col-md-4 col-sm-8 col-xs-8'>
+                          <h4 class = 'head_flight'>Arrival Time</h4>
+                          <h5 class = 'time_flight'>At 09:32</h5>
+                      </div>
+                      <div class = 'col-lg-4 col-md-4 col-sm-8 col-xs-8'>
+                          <h4 class = 'head_flight'>Total Time</h4>
+                          <h5 class = 'time_flight'>12hrs 30mins</h5>
+                      </div>
+                  </div>
+                  <div class = 'row'>
+                      <div class = 'col-lg-4 col-md-4 col-sm-8 col-xs-8'>
+                          <h4 class = 'head_flight'>Departure Time</h4>
+                          <h5 class = 'time_flight'>At 18:12</h5>
+                      </div>
+                      <div class = 'col-lg-4 col-md-4 col-sm-8 col-xs-8'>
+                          <h4 class = 'head_flight'>Arrival Time</h4>
+                          <h5 class = 'time_flight'>At 06:32</h5>
+                      </div>
+                      <div class = 'col-lg-4 col-md-4 col-sm-8 col-xs-8'>
+                          <h4 class = 'head_flight'>Total Time</h4>
+                          <h5 class = 'time_flight'>12hrs 30mins</h5>
+                      </div>
+                  </div>
+                  
+                </div>
+                <div class = 'col-lg-2 col-md-2 col-sm-8 col-xs-8'>
+                    <h4 class = 'price'>Price/person</h4>
+                    <h5 class = 'price_val'>Rs 60,000</h5>
+                    <div class = 'button button_flight'><button>Book Now</button></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div> 
+</section>
+<footer>
+    <div class = 'row' id = 'contact'>
+        <div class = 'col-lg-4 col-md-4 col-sm-8 col-xs-8'>
+            <span class = 'logo' style = 'margin-left:30px'><span style = 'font-size:70px'>&Tscr;</span>RAVEL-<span style = 'font-size:55px'>&Iscr;</span><img src = 'assets/images/travel.png' class = 'icon'/></span>
+        </div>
+        <div class = 'col-lg-4 col-md-4 col-sm-10 col-xs-10'>
+            <div style = 'margin-top:50px'>
+                <span class = 'head_footer'>Contact Us
+                    <button><i class="fa fa-linkedin-square link"></i></button>
+                    <button><i class="fa fa-twitter-square tweet"></i></button>
+                    <button><i class="fa fa-facebook-official fb"></i></button>
+                    <button><i class="fa fa-google-plus-official gp"></i></button>
+                    <button><i class="fa fa-vimeo-square vm"></i></button>
+                    <button><i class="fa fa-flickr fc"></i></button>
+                </span>
+            </div>     
+        </div>
+        <div class = 'col-lg-4 col-md-4 col-sm-10 col-xs-10'>
+            <div style = 'margin-top:50px'>
+                <span class = 'head_footer'>Call Us at 
+                    <button type="button" class="btn btn-default btn-lg"><span class="glyphicon glyphicon-phone"></span> Phone</button> 6134-3423-1234
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class = 'row'>
+        <div class = 'col-lg-4 col-md-4 col-sm-10 col-xs-10'>
+            <h3 class = 'head_footer' style = 'margin-left:40px;font-weight:bolder'>Travel News</h3>
+            <ul class = 'list'>
+                <li>Latest about Travel</li>
+                <li>New about tours</li>
+                <li>Group Tours Discount</li>
+                <li>Honeymoon sweet</li>
+                <li>Packages tour</li>
+                <li>Special Coupons</li>
+            </ul>
+        </div>
+        <div class = 'col-lg-4 col-md-4 col-sm-10 col-xs-10'>
+            <h3 class = 'head_footer' style = 'margin-left:40px;font-weight:bolder'>Discover</h3>
+            <ul class = 'list'>
+                <li>About Safety</li>
+                <li>Social Connect</li>
+                <li>Help on topics</li>
+                <li>Site Maps</li>
+                <li>Traveli picks</li>
+                <li>Special Discounts</li>
+            </ul>
+        </div>
+        <div class = 'col-lg-4 col-md-4 col-sm-10 col-xs-10'>
+            <h3 class = 'head_footer' style = 'margin-left:40px;font-weight:bolder'>Mail Us At:</h3>
+            <button class="btn btn-default btn-lg" style = 'margin-left:40px'><span class="glyphicon glyphicon-envelope"></span></button><span class = 'mail'>traveli@travel.com</span>
+        </div>
+    </div>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>

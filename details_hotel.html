@@ -1,0 +1,757 @@
+<!Doctype HTML>
+<html lang="en-US">
+<head>
+<meta charset = "UTF-8">
+<meta name="HandheldFriendly" content="true">
+<meta name="viewport" content="width=device-width, height=device-height, user-scalable=yes" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<link rel = 'stylesheet' href = 'assets/css/w3css.css'>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel = 'stylesheet' href = 'assets/css/template.css'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<section class = 'navigation'>
+<div class = 'row'>
+ <div class = 'col-lg-8 col-md-8 col-sm-10 col-xs-10' style = 'margin-top:5px;margin-bottom:5px'>
+    <span style = 'margin-left:60px'>My account </span>                                       
+     <span class = 'dropdown' style = 'margin-left:10px'>
+      <span class = 'dropdown-toggle' data-toggle = 'dropdown'>
+      Language<span class = 'caret'></span>  
+      </span>
+      <ul class = 'dropdown-menu'>
+          <li><a href = '#'>English</a></li>
+          <li><a href = '#'>Hindi</a></li>
+          <li><a href = '#'>Marathi</a></li>
+          <li><a href = '#'>Gujrati</a></li>
+          <li><a href = '#'>Telugu</a></li>
+      </ul>  
+    </span>
+</div>
+<div class = 'col-lg-4 col-md-4 col-sm-10 col-xs-10' style = 'margin-top:5px;'>
+   <span style = 'margin-right:30px'>Purchase</span>
+   <span class = 'form' data-toggle = 'modal' data-target = '#login'>Login </span>
+     <div class = 'modal fade' id = 'login' role = 'dialog'>
+         <div class = 'modal-dialog modal-sm'>
+           <div class = 'modal-content'>
+               <div class = 'modal-header'>
+                 <h4 class = 'text-center modal-title'>Login Form</h4>
+               </div>
+               <div class = 'modal-body'>
+                   <button class = 'btn btn-primary' style = 'width:100%'>Login using Facebook</button>
+                   <button class = 'btn btn-danger' style = 'width:100%;margin-top:10px'>Login using Google</button>
+                   <div class = 'text'>Or</div>
+                    <div class = 'input-group'>
+                      <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span><input type="email" class="form-control" placeholder="Email">
+                   </div>
+                   <div class = 'input-group'>
+                      <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span><input type="password" class="form-control" name="password" placeholder="Password">
+                   </div>
+               </div>
+               <div class = 'modal-footer'>
+               <button data-dismiss = 'modal' class = 'btn btn-success submit'>Submit</button>
+               </div>
+             </div>
+         </div>
+     </div>
+    <span class = 'form' data-toggle = 'modal' data-target = '#register'>Register </span>
+      <div class = 'modal fade' id = 'register' role ='dialog'>
+        <div class = 'modal-dialog modal-sm'>
+            <div class = 'modal-content'>
+                <div class = 'modal-header'>
+                 <h4 class = 'modal-title text-center'>Register</h4>
+                </div>
+                <div class = 'modal-body'>
+                    <div class = 'input-group'>
+                    <span class = 'input-group-addon'><i class = 'glyphicon glyphicon-user'></i></span>
+                    <input type = 'text' class = 'form-control' placeholder= 'First Name'>                 
+                    </div>
+                    <div class = 'input-group'>
+                    <span class = 'input-group-addon'><i class = 'glyphicon glyphicon-user'></i></span>
+                    <input type = 'text' class = 'form-control' placeholder= 'Last Name'>                 
+                    </div>
+                    <div class = 'input-group'>
+                    <span class = 'input-group-addon'><i class = 'glyphicon glyphicon-envelope'></i></span>
+                    <input type = 'email' class = 'form-control' placeholder= 'Email'>                 
+                    </div>
+                    <div class = 'input-group'>
+                    <span class = 'input-group-addon'><i class = 'glyphicon glyphicon-lock'></i></span>
+                    <input type = 'password' class = 'form-control' placeholder= 'Password'>                 
+                    </div>
+                </div>
+                <div class = 'modal-footer'>
+                    <button class = 'btn btn-success text-center submit' data-dismiss = 'modal'>Submit</button>
+                </div>
+            </div>
+        </div>
+      </div>
+</div>
+</div>    
+</section>
+<nav class = 'navbar navbar-inverse' data-spy = 'affix' data-offset-top = '197'>
+    <ul class = 'nav navbar-nav'>
+        <li><a href="template.html" class = 'links'>Home</a></li>
+        <li><a class = 'dropdown-toggle links' data-toggle = 'dropdown' href="#">Hotels<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="hotels.html" class = 'links'>Listings</a></li>
+              <li><a href="details_hotel.html" class = 'links'>Details Page</a></li>
+              <li><a href="bookings.html" class = 'links'>Bookings Page</a></li>
+            </ul>
+        </li>
+        <li><a class = 'dropdown-toggle links' data-toggle = 'dropdown' href="#">Flights<span class = 'caret'></span></a>
+            <ul class = 'dropdown-menu'>
+                <li><a href = 'flight.html' class = 'links'>Listings</a></li>
+                <li><a href = 'details_flight.html' class = 'links'>Details Page</a></li>
+                <li><a href="bookings_flight.html" class = 'links'>Bookings Page</a></li>
+            </ul>
+        </li>
+        <li><a class = 'dropdown-toggle links' data-toggle = 'dropdown' href="#">Tours<span class = 'caret'></span></a>
+           <ul class = 'dropdown-menu'>
+                <li><a href = 'tours.html' class = 'links'>Listings</a></li>
+                <li><a href = 'details_tour.html' class = 'links'>Details Page</a></li>
+                <li><a href="bookings_tour.html" class = 'links'>Bookings Page</a></li>
+            </ul>
+        </li>
+        <li><a href="template.html#about" class = 'links'>About Us </a></li>
+        <li><a href="#contact" class = 'links'>Contact Us</a></li>
+    </ul>
+    <span class = 'logo'><span style = 'font-size:70px'>&Tscr;</span>RAVEL-<span style = 'font-size:55px'>&Iscr;</span><img src = 'assets/images/travel.png' class = 'icon'/></span>
+</nav>
+<section class = 'hotel_search'><h3 style = 'margin-top:5px'>About Hotel Nanyang</h3></section>
+<div class = 'main'>
+<section>
+    <div class ='row'>
+        <div class = 'col-lg-9 col-md-9 col-xs-12 col-sm-12' style = 'margin-top:30px'>
+             <div id = 'pics_detail' class = 'carousel slide' data-ride = 'carousel'>
+                 <ol class = 'carousel-indicators'>
+                     <li data-target = '#pics_detail' data-slide-to = '0' class = 'active'></li>
+                     <li data-target = '#pics_detail' data-slide-to = '1'></li>
+                     <li data-target = '#pics_detail' data-slide-to = '2'></li>
+                     <li data-target = '#pics_detail' data-slide-to = '3'></li>
+                 </ol>
+                 <div class = 'carousel-inner'>
+                     <div class = 'item active'>
+                         <img src ='assets/images/hotel_detail2.jpg' class = 'img_detail'>
+                     </div>
+                     <div class = 'item'>
+                         <img src ='assets/images/hotel_detail.jpg' class = 'img_detail'>
+                     </div>
+                     <div class = 'item'>
+                         <img src ='assets/images/hotel_detail3.jpg' class = 'img_detail'>   
+                    </div>
+                    <div class = 'item'>
+                         <img src ='assets/images/hotel_detail4.jpg' class = 'img_detail'>   
+                    </div>  
+                 </div>
+                <a class="left carousel-control" href="#pics_detail" data-slide="prev">
+                     <span class="glyphicon glyphicon-chevron-left"></span>
+                     <span class="sr-only">Previous</span>
+                 </a>
+                 <a class="right carousel-control" href="#pics_detail" data-slide="next">
+                     <span class="glyphicon glyphicon-chevron-right"></span>
+                     <span class="sr-only">Next</span>
+                 </a>
+            </div>
+             <div class = 'w3-card-4 details_book'>
+                 <ul class="nav nav-pills">
+                     <li class="active" style = 'margin-left:-80px;'><a data-toggle="pill" href="#desc">Description</a></li>
+                     <li><a data-toggle="pill" href="#available">Availability</a></li>
+                     <li><a data-toggle="pill" href="#amenities">Amenities</a></li>
+                     <li><a data-toggle="pill" href="#things">Things to Do</a></li>
+                     <li><a data-toggle="pill" href="#reviews">Reviews</a></li>
+                     <li><a data-toggle="pill" href="#review_write">Write a Review</a></li>
+                 </ul>
+                 <div class="tab-content">
+                     <div id="desc" class="tab-pane fade in active">
+                         <div class = 'row basics'>
+                             <div class = 'col-lg-6 col-md-6 col-sm-10 col-xs-10 w3-card-4 w3-light-gray card_head_detail'>
+                                 <div class = 'row'>
+                                     <div class = 'col-lg-6 col-md-6 col-sm-10 col-md-10'>
+                                         <h4 class = 'head_detail'>Hotel Type:</h4>
+                                         <h4 class = 'head_detail'>Minimum Stay:</h4>
+                                         <h4 class = 'head_detail'>Country:</h4>
+                                         <h4 class = 'head_detail'>City:</h4>
+                                         <h4 class = 'head_detail'>Cancellation:</h4>
+                                     </div>
+                                     <div class = 'col-lg-6 col-md-6 col-sm-10 col-md-10'>
+                                         <h4 class = 'about_part'>4 star</h4>
+                                         <h4 class = 'about_part'>2 nights</h4>
+                                         <h4 class = 'about_part'>Japan</h4>
+                                         <h4 class = 'about_part'>Tokyo</h4>
+                                         <h4 class = 'about_part'>Restricted</h4>
+                                     </div>
+                                 </div>
+                             </div>
+                             <div class = 'col-lg-6 col-md-6 col-sm-10 col-xs-10 w3-card-4 w3-light-gray card_head_detail' style = 'margin-left:60px;'>
+                                 <div class = 'row'>
+                                     <div class = 'col-lg-6 col-md-6 col-sm-10 col-md-10'>
+                                         <h4 class = 'head_detail'>Extra People:</h4>
+                                         <h4 class = 'head_detail'>Neighborhood:</h4>
+                                         <h4 class = 'head_detail'>Specality:</h4>
+                                         <h4 class = 'head_detail'>Food Type:</h4>
+                                         <h4 class = 'head_detail'>Minimum Cost:</h4>
+                                     </div>
+                                     <div class = 'col-lg-6 col-md-6 col-sm-10 col-md-10'>
+                                         <h4 class = 'about_part'>No charge</h4>
+                                         <h4 class = 'about_part'>Republiq</h4>
+                                         <h4 class = 'about_part'>Art Gallery</h4>
+                                         <h4 class = 'about_part'>Veg & Non-Veg</h4>
+                                         <h4 class = 'about_part'>$300/ night</h4>
+                                     </div>
+                                 </div>
+                             </div>
+                         </div>
+                         <div class = 'about_hotel w3-card w3-white'>
+                             <h3 class = 'heading'>About Nanyang Hotel</h3>
+                             <h4 class = 'hotel_about_para'>Sed aliquam nunc eget velit imperdiet, in rutrum mauris malesuada. Quisque ullamcorper vulputate nisi, et fringilla ante convallis quis. Nullam vel tellus non elit suscipit volutpat. Integer id felis et nibh rutrum dignissim ut non risus. In tincidunt urna quis sem luctus, sed accumsan magna pellentesque. Donec et iaculis tellus. Vestibulum ut iaculis justo, auctor sodales lectus. Donec et tellus tempus, dignissim maurornare, consequat lacus. Integer dui neque, scelerisque nec sollicitudin sit amet, sodales a erat. Duis vitae condimentum ligula. Integer eu mi nisl. Donec massa dui, commodo id arcu quis, venenatis scelerisque velit.</h4> 
+                             <h4 class = 'hotel_about_para'> Praesent eros turpis, commodo vel justo at, pulvinar mollis eros. Mauris aliquet eu quam id ornare. Morbi ac quam enim. Cras vitae nulla condimentum, semper dolor non, faucibus dolor. Vivamus adipiscing eros quis orci fringilla, sed pretium lectus viverra. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec nec velit non odio aliquam suscipit. Sed non neque faucibus, condimentum lectus at, accumsan enim. Fusce pretium egestas cursus. Etiam consectetur, orci vel rutrum volutpat, odio odio pretium nisiodo tellus libero et urna. Sed commodo ipsum ligula, id volutpat risus vehicula in. Pellentesque non massa eu nibh posuere bibendum non sed enim. Maecenas lobortis nulla sem, vel egestas dui ullamcorper ac. </h4>
+                             <h4 class = 'hotel_about_para'> Sed scelerisque lectus sit amet faucibus sodales. Proin ut risus tortor. Etiam fermentum tellus auctor, fringilla sapien et, congue quam. In a luctus tortor. Suspendisse eget tempor libero, ut sollicitudin ligula. Nulla vulputate tincidunt est non congue. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus at est imperdiet, dapibus ipsum vel, lacinia nulla. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Phasellus id interdum lectus, ut elementum elit. Nullam a molestie magna. Praesent eros turpis, commodo vel justo at, pulvinar mollis eros. Mauris aliquet eu quam id ornare. Morbi ac quam enim. Cras vitae nulla condimentum, semper dolor non, faucibus dolor. Vivamus adipiscing eros quis orci fringilla, sed pretium lectus viverra.</h4>
+                         </div><br><br>
+                     </div>
+                     <div id="available" class="tab-pane fade in">
+                         <div class = 'row basics'>
+                             <div class = 'col-lg-12 col-md-12 col-sm-12 col-xs-12 w3-card-4 w3-light-gray room_available'>
+                                <div class = 'row' style = 'margin-bottom:10px;'>
+                                    <div class ='col-lg-8 col-md-8 col-sm-12 col-xs-12'>
+                                        <h3 class = 'head'>When</h3>
+                                        <div class = 'row'>
+                                            <div class = 'col-lg-6 col-md-6 col-sm-12 col-xs-12'>
+                                                <div class = 'row'>
+                                                  <h5 class = 'subhead col-lg-5 col-md-5 col-sm-10 col-xs-10'>Check-In</h5>
+                                                   <span class ='input-group col-lg-7 col-md-7 col-sm-6 col-xs-6' style = 'margin-left: 10px;'>
+                                                      <span class = 'input-group-addon'><i class = 'glyphicon glyphicon-calendar'></i></span>
+                                                       <input type = 'date' name = 'checkin' style ='height:30px'>
+                                                   </span>
+                                                </div>
+                                            </div>
+                                            <div class = 'col-lg-6 col-md-6 col-sm-12 col-xs-12'>
+                                                <div class = 'row'>
+                                                    <h5 class = 'subhead col-lg-5 col-md-5 col-sm-6 col-xs-6'>Check-Out</h5>
+                                                    <span class ='input-group col-lg-7 col-md-7 col-sm-6 col-xs-6'>
+                                                        <span class = 'input-group-addon'><i class = 'glyphicon glyphicon-calendar'></i></span>
+                                                        <input type = 'date' name = 'checkout' style ='height:30px'>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class ='col-lg-4 col-md-4 col-sm-12 col-md-12'>
+                                        <h3 class = 'head'>Who</h3>
+                                        <div class = 'row'>
+                                            <h5 class = 'subhead  col-lg-2 col-md-2 col-sm-5 col-xs-5'>Rooms</h5>
+                                            <h5 class = 'subhead  col-lg-2 col-md-3 col-sm-5 col-xs-5'>Adults</h5>
+                                            <h5 class = 'subhead  col-lg-2 col-md-3 col-sm-5 col-xs-5'>Kids</h5>
+                                        </div>
+                                        <div class = 'row'>
+                                            <span class = 'options col-lg-2 col-md-2 col-sm-5 col-xs-5'>
+                                                <select names = 'rooms'>
+                                                    <option value = '1' selected>1</option>
+                                                    <option value = '2'>2</option>
+                                                    <option value = '3'>3</option>
+                                                    <option value = '4'>4</option>
+                                                    <option value = '5'>5</option>
+                                                </select>
+                                            </span>
+                                            <span class = 'options  col-lg-2 col-md-2 col-sm-5 col-xs-5'><select names = 'adults'>
+                                              <option value = '1' selected>1</option>
+                                              <option value = '2'>2</option>
+                                                <option value = '3'>3</option>
+                                                <option value = '4'>4</option>
+                                                <option value = '5'>5</option>  
+                                            </select>
+                                            </span>
+                                            <span class = 'options col-lg-2 col-md-2 col-sm-5 col-xs-5'><select names = 'kids'>
+                                                <option value = '1' selected>1</option>
+                                                <option value = '2'>2</option>
+                                                <option value = '3'>3</option>
+                                                <option value = '4'>4</option>
+                                                <option value = '5'>5</option>
+                
+                                             </select>
+                                             </span>
+                                           </div>
+                                       </div>
+                                 </div>
+                                 <div class = 'text-center'>
+                                     <button class="btn btn-primary btn-lg confirm_book">Search Now </button>
+                                 </div>
+                             </div>
+                         </div>
+                          <div class = 'about_hotel w3-card'>
+                             <h3 class = 'heading'>Available Rooms in the Hotel</h3>
+                            <div class = 'row'>
+                                 <div class = 'col-lg-3 col-md-3 col-sm-10 col-xs-10'>
+                                     <div class = 'w3-card-4 w3-display-container card_room_img'>
+                                         <img src = 'assets/images/hotel8.jpg' class = 'book_img'>
+                                         <div class = 'caption'>
+                                             <h4 class = 'cap'>Luxury Rooms</h4>
+                                         </div>
+                                     </div>
+                                 </div>
+                                 <div class = 'col-lg-7 col-md-7 col-sm-12 col-xs-12'>
+                                     <div class = 'w3-card-4 w3-white w3-display-container card_rooms'>
+                                        <h4 class = 'heading'>Details About the Room:-</h4>
+                                         <h4 class = 'subheading' style = 'margin-left:5px;'>
+                                             Nunc cursus libero purus ac congue ar lorem cursus ut sed vitae pulvinar massa idend porta nequetiam elerisque mi id, consectetur adipi deese cing elit maus fringilla bibe endum.
+                                         </h4>
+                                     </div>
+                                 </div>
+                                 <div class = 'col-lg-2 col-md-2 col-sm-4 col-xs-4'>
+                                    <h4 class = 'price'>Price for 2</h4>
+                                   <h5 class = 'price_val'>Rs 30,000</h5>
+                                 <div class = 'button book_hotel'><button>Book Now</button></div>
+                                 </div>
+                             </div>
+                            <div class = 'row'>
+                                 <div class = 'col-lg-3 col-md-3 col-sm-10 col-xs-10'>
+                                     <div class = 'w3-card-4 w3-display-container card_room_img'>
+                                         <img src = 'assets/images/hotel2.jpg' class = 'book_img'>
+                                         <div class = 'caption'>
+                                             <h4 class = 'cap'>Deluxe Rooms</h4>
+                                         </div>
+                                     </div>
+                                 </div>
+                                 <div class = 'col-lg-7 col-md-7 col-sm-12 col-xs-12'>
+                                     <div class = 'w3-card-4 w3-white w3-display-container card_rooms'>
+                                        <h4 class = 'heading'>Details About the Room:-</h4>
+                                         <h4 class = 'subheading' style = 'margin-left:5px;'>
+                                             Nunc cursus libero purus ac congue ar lorem cursus ut sed vitae pulvinar massa idend porta nequetiam elerisque mi id, consectetur adipi deese cing elit maus fringilla bibe endum.
+                                             consectetur adipi  
+                                         </h4>
+                                     </div>
+                                 </div>
+                                 <div class = 'col-lg-2 col-md-2 col-sm-4 col-xs-4'>
+                                    <h4 class = 'price'>Price for 2</h4>
+                                   <h5 class = 'price_val'>Rs 40,000</h5>
+                                 <div class = 'button book_hotel'><button>Book Now</button></div>
+                                 </div>
+                             </div>
+                            <div class = 'row'>
+                                 <div class = 'col-lg-3 col-md-3 col-sm-10 col-xs-10'>
+                                     <div class = 'w3-card-4 w3-display-container card_room_img'>
+                                         <img src = 'assets/images/hotel11.jpg' class = 'book_img'>
+                                         <div class = 'caption'>
+                                             <h4 class = 'cap'>Supremum Rooms</h4>
+                                         </div>
+                                     </div>
+                                 </div>
+                                 <div class = 'col-lg-7 col-md-7 col-sm-12 col-xs-12'>
+                                     <div class = 'w3-card-4 w3-white w3-display-container card_rooms'>
+                                        <h4 class = 'heading'>Details About the Room:-</h4>
+                                         <h4 class = 'subheading' style = 'margin-left:5px;'>
+                                             Nunc cursus libero purus ac congue ar lorem cursus ut sed vitae pulvinar massa idend porta nequetiam elerisque mi id, consectetur adipi deese cing elit maus fringilla bibe endum.
+                                             consectetur adipi de
+                                         </h4>
+                                     </div>
+                                 </div>
+                                 <div class = 'col-lg-2 col-md-2 col-sm-4 col-xs-4'>
+                                    <h4 class = 'price'>Price for 2</h4>
+                                   <h5 class = 'price_val'>Rs 50,000</h5>
+                                 <div class = 'button book_hotel'><button>Book Now</button></div>
+                                 </div>
+                             </div>
+                            <div class = 'row'>
+                                 <div class = 'col-lg-3 col-md-3 col-sm-10 col-xs-10'>
+                                     <div class = 'w3-card-4 w3-display-container card_room_img'>
+                                         <img src = 'assets/images/hotel12.jpg' class = 'book_img'>
+                                         <div class = 'caption'>
+                                             <h4 class = 'cap'>Premium Rooms</h4>
+                                         </div>
+                                     </div>
+                                 </div>
+                                 <div class = 'col-lg-7 col-md-7 col-sm-12 col-xs-12'>
+                                     <div class = 'w3-card-4 w3-white w3-display-container card_rooms'>
+                                        <h4 class = 'heading'>Details About the Room:-</h4>
+                                         <h4 class = 'subheading' style = 'margin-left:5px;'>
+                                             Nunc cursus libero purus ac congue ar lorem cursus ut sed vitae pulvinar massa idend porta nequetiam elerisque mi id, consectetur adipi deese cing elit maus fringilla bibe endum.
+                                             consectlvinar
+                                         </h4>
+                                     </div>
+                                 </div>
+                                 <div class = 'col-lg-2 col-md-2 col-sm-4 col-xs-4'>
+                                    <h4 class = 'price'>Price for 2</h4>
+                                   <h5 class = 'price_val'>Rs 60,000</h5>
+                                 <div class = 'button book_hotel'><button>Book Now</button></div>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                     <div id="amenities" class="tab-pane fade in">
+                         <div class = 'w3-card-4 w3-light-gray amenities'>
+                            <h3 class = 'heading'>Ameneties Style 1</h3>
+                             <div class = 'row'>
+                                <h4 class = 'col-lg-3 col-md-3 col-sm-6 col-xs-6 amenities_value'>Smoking Allowed</h4>
+                                <h4 class = 'col-lg-3 col-md-3 col-sm-6 col-xs-6 amenities_value'>Free Parking </h4>
+                                <h4 class = 'col-lg-3 col-md-3 col-sm-6 col-xs-6 amenities_value'>Play Place</h4>
+                                <h4 class = 'col-lg-2 col-md-3 col-sm-6 col-xs-6 amenities_value'>Fire Place</h4>
+                            </div> 
+                             <div class = 'row'>
+                                <h4 class = 'col-lg-3 col-md-3 col-sm-6 col-xs-6 amenities_value'>Air Conditioning</h4>
+                                <h4 class = 'col-lg-3 col-md-3 col-sm-6 col-xs-6 amenities_value'> Wine Bar </h4>
+                                <h4 class = 'col-lg-3 col-md-3 col-sm-6 col-xs-6 amenities_value'>Room Service</h4>
+                                <h4 class = 'col-lg-2 col-md-3 col-sm-6 col-xs-6 amenities_value'>Refrigerator</h4>
+                            </div> 
+                             <div class = 'row'>
+                                <h4 class = 'col-lg-3 col-md-3 col-sm-6 col-xs-6 amenities_value'>Television</h4>
+                                <h4 class = 'col-lg-3 col-md-3 col-sm-6 col-xs-6 amenities_value'>Free Wifi </h4>
+                                <h4 class = 'col-lg-3 col-md-3 col-sm-6 col-xs-6 amenities_value'>Swimming Pool</h4>
+                                <h4 class = 'col-lg-2 col-md-3 col-sm-6 col-xs-6 amenities_value'> Fitness Cell</h4>
+                            </div> 
+                             <div class = 'row'>
+                                <h4 class = 'col-lg-3 col-md-3 col-sm-6 col-xs-6 amenities_value'>Television</h4>
+                                <h4 class = 'col-lg-3 col-md-3 col-sm-6 col-xs-6 amenities_value'>Handicap Accessible</h4>
+                                <h4 class = 'col-lg-3 col-md-3 col-sm-6 col-xs-6 amenities_value'>Hot tub </h4>
+                                <h4 class = 'col-lg-2 col-md-3 col-sm-6 col-xs-6 amenities_value'>Elevator </h4>
+                            </div> 
+                        </div><br>
+                         <div class = 'w3-card-4 w3-light-gray amenities'>
+                            <h3 class = 'heading'>Ameneties Style 2</h3>
+                            <div class = 'row'>
+                                <h4 class = 'col-lg-3 col-md-3 col-sm-6 col-xs-6 amenities_value'>Television</h4>
+                                <h4 class = 'col-lg-3 col-md-3 col-sm-6 col-xs-6 amenities_value'>Free Wifi </h4>
+                                <h4 class = 'col-lg-3 col-md-3 col-sm-6 col-xs-6 amenities_value'>Swimming Pool</h4>
+                                <h4 class = 'col-lg-2 col-md-3 col-sm-6 col-xs-6 amenities_value'> Fitness Cell</h4>
+                            </div> 
+                             <div class = 'row'>
+                                <h4 class = 'col-lg-3 col-md-3 col-sm-6 col-xs-6 amenities_value'>Air Conditioning</h4>
+                                <h4 class = 'col-lg-3 col-md-3 col-sm-6 col-xs-6 amenities_value'> Wine Bar </h4>
+                                <h4 class = 'col-lg-3 col-md-3 col-sm-6 col-xs-6 amenities_value'>Room Service</h4>
+                                <h4 class = 'col-lg-2 col-md-3 col-sm-6 col-xs-6 amenities_value'>Refrigerator</h4>
+                            </div> 
+                             <div class = 'row'>
+                                <h4 class = 'col-lg-3 col-md-3 col-sm-6 col-xs-6 amenities_value'>Smoking Allowed</h4>
+                                <h4 class = 'col-lg-3 col-md-3 col-sm-6 col-xs-6 amenities_value'>Free Parking </h4>
+                                <h4 class = 'col-lg-3 col-md-3 col-sm-6 col-xs-6 amenities_value'>Play Place</h4>
+                                <h4 class = 'col-lg-2 col-md-3 col-sm-6 col-xs-6 amenities_value'>Fire Place</h4>
+                            </div> 
+                             <div class = 'row'>
+                                <h4 class = 'col-lg-3 col-md-3 col-sm-6 col-xs-6 amenities_value'>Television</h4>
+                                <h4 class = 'col-lg-3 col-md-3 col-sm-6 col-xs-6 amenities_value'>Handicap Accessible</h4>
+                                <h4 class = 'col-lg-3 col-md-3 col-sm-6 col-xs-6 amenities_value'>Hot tub </h4>
+                                <h4 class = 'col-lg-2 col-md-3 col-sm-6 col-xs-6 amenities_value'>Elevator </h4>
+                            </div> 
+                             <div class = 'row'>
+                                <h4 class = 'col-lg-3 col-md-3 col-sm-6 col-xs-6 amenities_value'>Free Breakfast</h4>
+                                <h4 class = 'col-lg-3 col-md-3 col-sm-6 col-xs-6 amenities_value'>Conference Room </h4>
+                                <h4 class = 'col-lg-3 col-md-3 col-sm-6 col-xs-6 amenities_value'>Entertainment</h4>
+                                <h4 class = 'col-lg-2 col-md-3 col-sm-6 col-xs-6 amenities_value'>Pick and Drop </h4>
+                            </div> 
+                        </div><br>
+                     </div>
+                     <div id="things" class="tab-pane fade in">
+                         <h3 class = 'heading'>Things to do in the hotel</h3>
+                         <div class = 'row'>
+                                 <div class = 'col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+                                       <div class = 'w3-card-4 w3-display-container w3-light-gray card_things'>
+                                         <div class = 'row'>
+                                             <div class = 'col-lg-4 col-md-4 col-sm-10 col-xs-10'>
+                                                <img src = 'assets/images/pool.jpg' class = 'thing_img'>
+                                             </div>
+                                             <div class = 'col-lg-8 col-md-8 col-sm-10 col-xs-10'>
+                                                <h4 class = 'heading' style = 'text-align: left'>Swimming Games:-</h4>
+                                                <h4 class = 'subheading' style = 'margin-left:5px;'>
+                                             Nunc cursus libero purus ac congue ar lorem cursus ut sed vitae pulvinar massa idend porta nequetiam elerisque mi id, consectetur adipi deese cing elit maus fringilla bibe endum.
+                                               consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore 
+                                              </h4>
+                                            <div class = 'button'><button>More About It</button></div>
+                                             </div>
+                                         </div>
+                                    </div>
+                                       <div class = 'w3-card-4 w3-display-container w3-light-gray card_things' style ='margin-top:15px'>
+                                         <div class = 'row'>
+                                             <div class = 'col-lg-4 col-md-4 col-sm-10 col-xs-10'>
+                                                <img src = 'assets/images/dance.jpg' class = 'thing_img'>
+                                             </div>
+                                             <div class = 'col-lg-8 col-md-8 col-sm-10 col-xs-10'>
+                                                <h4 class = 'heading' style = 'text-align: left'>Caberette Dance Show:-</h4>
+                                                <h4 class = 'subheading' style = 'margin-left:5px;'>
+                                             Nunc cursus libero purus ac congue ar lorem cursus ut sed vitae pulvinar massa idend porta nequetiam elerisque mi id, consectetur adipi deese cing elit maus fringilla bibe endum.
+                                               consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore 
+                                              </h4>
+                                            <div class = 'button'><button>More About It</button></div>
+                                             </div>
+                                         </div>
+                                    </div>
+                                       <div class = 'w3-card-4 w3-display-container w3-light-gray card_things' style ='margin-top:15px'>
+                                         <div class = 'row'>
+                                             <div class = 'col-lg-4 col-md-4 col-sm-10 col-xs-10'>
+                                                <img src = 'assets/images/art.jpg' class = 'thing_img'>
+                                             </div>
+                                             <div class = 'col-lg-8 col-md-8 col-sm-10 col-xs-10'>
+                                                <h4 class = 'heading' style = 'text-align: left'>Art Room Galery:-</h4>
+                                                <h4 class = 'subheading' style = 'margin-left:5px;'>
+                                             Nunc cursus libero purus ac congue ar lorem cursus ut sed vitae pulvinar massa idend porta nequetiam elerisque mi id, consectetur adipi deese cing elit maus fringilla bibe endum.
+                                               consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore 
+                                              </h4>
+                                            <div class = 'button'><button>More About It</button></div>
+                                             </div>
+                                         </div>
+                                    </div>
+                                 </div>
+                             </div>
+                     </div>
+                     <div id="reviews" class="tab-pane fade in">
+                         <h3 class = 'heading'>Reviews</h3>
+                         <div class = 'w3-card-4 w3-light-gray amenities'>
+                             <div class = 'row'>
+                                 <div class = 'col-lg-5 col-md-5 col-sm-10 col-xs-10'>
+                                    <div class = 'w3-card-4 w3-white review_card'>
+                                        <h1 class = 'review'>4.0 / 5</h1>
+                                        <span style = 'margin-left:80px'>
+                                            <img src = 'assets/images/star.png'>
+                                            <img src = 'assets/images/star.png'>
+                                            <img src = 'assets/images/star.png'>
+                                            <img src = 'assets/images/star.png'>
+                                            <img src = 'assets/images/star2.png'>
+                                        </span>
+                                        <div class = 'text-center confirm'>
+                                           <button class="btn btn-success btn-lg confirm_book">Write A Review</button>
+                                        </div>
+                                  </div>
+                                 </div>
+                                 <div class = 'col-lg-7 col-md-7 col-sm-10 col-xs-10'>
+                                     <div class = 'w3-card-4 w3-white review_card' style ='width:90%;'>
+                                         <div class = 'row'>
+                                     <div class = 'col-lg-6 col-md-6 col-sm-10 col-md-10'>
+                                         <h4 class = 'head_review'>Service:</h4>
+                                         <h4 class = 'head_review'>Sleep Quality:</h4>
+                                         <h4 class = 'head_review'>Location:</h4>
+                                         <h4 class = 'head_review'>Cleanliness:</h4>
+                                         <h4 class = 'head_review'>Rooms:</h4>
+                                     </div>
+                                     <div class = 'col-lg-6 col-md-6 col-sm-10 col-md-10'>
+                                        <h5 style = 'margin-left:30px'>
+                                            <img src = 'assets/images/star.png'>
+                                             <img src = 'assets/images/star.png'>
+                                             <img src = 'assets/images/star.png'>
+                                            <img src = 'assets/images/star.png'>
+                                             <img src = 'assets/images/star2.png'>
+                                        </h5>
+                                        <h5 style = 'margin-left:30px'>
+                                            <img src = 'assets/images/star.png'>
+                                             <img src = 'assets/images/star.png'>
+                                             <img src = 'assets/images/star.png'>
+                                            <img src = 'assets/images/star.png'>
+                                             <img src = 'assets/images/star2.png'>
+                                        </h5> 
+                                        <h5 style = 'margin-left:30px'>
+                                            <img src = 'assets/images/star.png'>
+                                             <img src = 'assets/images/star.png'>
+                                             <img src = 'assets/images/star.png'>
+                                            <img src = 'assets/images/star2.png'>
+                                             <img src = 'assets/images/star2.png'>
+                                        </h5>
+                                        <h5 style = 'margin-left:30px'>
+                                            <img src = 'assets/images/star.png'>
+                                             <img src = 'assets/images/star.png'>
+                                             <img src = 'assets/images/star.png'>
+                                            <img src = 'assets/images/star.png'>
+                                             <img src = 'assets/images/star2.png'>
+                                        </h5> 
+                                         <h5 style = 'margin-left:30px'>
+                                            <img src = 'assets/images/star.png'>
+                                             <img src = 'assets/images/star.png'>
+                                             <img src = 'assets/images/star.png'>
+                                            <img src = 'assets/images/star2.png'>
+                                             <img src = 'assets/images/star2.png'>
+                                        </h5> 
+                                     </div>
+                                 </div>
+                               </div>
+                             </div>
+                             </div>
+                        </div>
+                          <div class = 'row'>
+                              <h3 class = 'heading'>Our Customer Reviews</h3>
+                               <div class = 'col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+                                 <div class = 'w3-card-4 w3-display-container w3-light-gray card_things'>
+                                <div class = 'row'>
+                                   <div class = 'col-lg-4 col-md-4 col-sm-10 col-xs-10'>
+                                      <img src = 'assets/images/man.jpg' class = 'review_img'>
+                                    </div>
+                                    <div class = 'col-lg-8 col-md-8 col-sm-10 col-xs-10'>
+                                        <h4 class = 'heading' style = 'text-align: left'>By: Aldrach Kiilien
+                                          <span style = 'margin-left:180px'>
+                                            <img src = 'assets/images/star.png'>
+                                             <img src = 'assets/images/star.png'>
+                                             <img src = 'assets/images/star.png'>
+                                            <img src = 'assets/images/star.png'>
+                                             <img src = 'assets/images/star2.png'>
+                                        </span> 
+                                        </h4>
+                                        <h4 class = 'subheading' style = 'margin-left:5px;'>
+                                            Nunc cursus libero purus ac congue ar lorem cursus ut sed v d scrambled it to make a type specimen book. It has survived not only five centuries.
+                                        </h4>
+                                    </div>
+                                </div>
+                             </div>
+                                  <div class = 'w3-card-4 w3-display-container w3-light-gray card_things' style = 'margin-top:10px;'>
+                                <div class = 'row'>
+                                   <div class = 'col-lg-4 col-md-4 col-sm-10 col-xs-10'>
+                                      <img src = 'assets/images/woman.jpg' class = 'review_img'>
+                                    </div>
+                                    <div class = 'col-lg-8 col-md-8 col-sm-10 col-xs-10'>
+                                        <h4 class = 'heading' style = 'text-align: left'>By:Gwenyth Pots
+                                          <span style = 'margin-left:180px'>
+                                            <img src = 'assets/images/star.png'>
+                                             <img src = 'assets/images/star.png'>
+                                             <img src = 'assets/images/star.png'>
+                                            <img src = 'assets/images/star2.png'>
+                                             <img src = 'assets/images/star2.png'>
+                                        </span> 
+                                        </h4>
+                                        <h4 class = 'subheading' style = 'margin-left:5px;'>
+                                            Nunc cursus libero purus ac congue ar lorem cursus ut sed v d scrambled it to make a type specimen book. It has survived not only five centuries.
+                                        </h4>
+                                    </div>
+                                </div>
+                             </div>
+                                   <div class = 'w3-card-4 w3-display-container w3-light-gray card_things' style = 'margin-top:10px;'>
+                                <div class = 'row'>
+                                   <div class = 'col-lg-4 col-md-4 col-sm-10 col-xs-10'>
+                                      <img src = 'assets/images/mani.jpg' class = 'review_img'>
+                                    </div>
+                                    <div class = 'col-lg-8 col-md-8 col-sm-10 col-xs-10'>
+                                        <h4 class = 'heading' style = 'text-align: left'>By:Robert Stark
+                                          <span style = 'margin-left:180px'>
+                                            <img src = 'assets/images/star.png'>
+                                             <img src = 'assets/images/star.png'>
+                                             <img src = 'assets/images/star.png'>
+                                            <img src = 'assets/images/star2.png'>
+                                             <img src = 'assets/images/star2.png'>
+                                        </span> 
+                                        </h4>
+                                        <h4 class = 'subheading' style = 'margin-left:5px;'>
+                                            Nunc cursus libero purus ac congue ar lorem cursus ut sed v d scrambled it to make a type specimen book. It has survived not only five centuries.
+                                        </h4>
+                                    </div>
+                                </div>
+                             </div>
+                               </div>
+                        </div>
+                        
+                     </div>
+                     <div id="review_write" class="tab-pane fade in">
+                         <h3 class = 'heading'> Write a Review</h3>
+                         <div class = 'w3-card-4 text-area'>
+                           <textarea rows="20" cols="104" ></textarea>
+                         </div>
+                         <div class = 'text-center confirm'>
+                            <button class="btn btn-primary btn-lg confirm_book">Submit Review</button>
+                         </div>
+                     </div>
+                </div>
+            </div>
+        </div>
+        <div class = 'col-lg-3 col-md-3 col-xs-8 col-sm-6'>
+            <h3 class = 'heading_book'>Other Hotels </h3>
+            <div class = 'w3-card-4 w3-display-container card_book'>
+                <img src = 'assets/images/hotel5.jpg' class = 'book_img'>
+                <div class = 'caption'>
+                    <h4 class = 'cap'>Forte De Vale Hotel</h4>
+                </div>
+            </div>
+            <div class = 'w3-card-4 w3-display-container card_book' style = 'margin-top:20px;'>
+                <img src = 'assets/images/hotel.jpg' class = 'book_img'>
+                    <div class = 'caption'>
+                        <h4 class = 'cap'>Norasdg Hotel</h4>
+                    </div>
+             </div>
+            <div class = 'w3-card-4 w3-display-container card_book' style = 'margin-top:20px;'>
+                <img src = 'assets/images/hotel10.jpg' class = 'book_img'>
+                    <div class = 'caption'>
+                        <h4 class = 'cap'>Minisweep Hotel</h4>
+                    </div>
+             </div>
+            <div class = 'w3-card-4 w3-display-container card_book'style = 'margin-top:20px;'>
+                <img src = 'assets/images/hotel11.jpg' class = 'book_img'>
+                    <div class = 'caption'>
+                        <h4 class = 'cap'>Rasa Santossa Hotel</h4>
+                    </div>
+             </div>
+            <div class = 'w3-card-4 w3-display-container card_book' style = 'margin-top:20px;'>
+                <img src = 'assets/images/hotel12.jpg' class = 'book_img'>
+                    <div class = 'caption'>
+                        <h4 class = 'cap'>Hiltion Hotel</h4>
+                    </div>
+             </div>
+            <div class = 'w3-card-4 w3-display-container card_book' style = 'margin-top:20px;'>
+                <img src = 'assets/images/hotel.jpg' class = 'book_img'>
+                    <div class = 'caption'>
+                        <h4 class = 'cap'>Kritaong Hotel</h4>
+                    </div>
+             </div>
+            <div class = 'w3-card-4 w3-display-container card_book' style = 'margin-top:20px;'>
+                <img src = 'assets/images/hotel2.jpg' class = 'book_img'>
+                    <div class = 'caption'>
+                        <h4 class = 'cap'>Atlantis Hotel</h4>
+                    </div>
+             </div>
+            <div class = 'w3-card-4 w3-display-container card_book' style = 'margin-top:20px;'>
+                <img src = 'assets/images/hotel3.jpg' class = 'book_img'>
+                    <div class = 'caption'>
+                        <h4 class = 'cap'>Beuarsituc Hotel</h4>
+                    </div>
+             </div>
+        </div>
+    </div>
+</section>
+<footer>
+    <div class = 'row' id = 'contact'>
+        <div class = 'col-lg-4 col-md-4 col-sm-8 col-xs-8'>
+            <span class = 'logo' style = 'margin-left:30px'><span style = 'font-size:70px'>&Tscr;</span>RAVEL-<span style = 'font-size:55px'>&Iscr;</span><img src = 'assets/images/travel.png' class = 'icon'/></span>
+        </div>
+        <div class = 'col-lg-4 col-md-4 col-sm-10 col-xs-10'>
+            <div style = 'margin-top:50px'>
+                <span class = 'head_footer'>Contact Us
+                    <button><i class="fa fa-linkedin-square link"></i></button>
+                    <button><i class="fa fa-twitter-square tweet"></i></button>
+                    <button><i class="fa fa-facebook-official fb"></i></button>
+                    <button><i class="fa fa-google-plus-official gp"></i></button>
+                    <button><i class="fa fa-vimeo-square vm"></i></button>
+                    <button><i class="fa fa-flickr fc"></i></button>
+                </span>
+            </div>     
+        </div>
+        <div class = 'col-lg-4 col-md-4 col-sm-10 col-xs-10'>
+            <div style = 'margin-top:50px'>
+                <span class = 'head_footer'>Call Us at 
+                    <button type="button" class="btn btn-default btn-lg"><span class="glyphicon glyphicon-phone"></span> Phone</button> 6134-3423-1234
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class = 'row'>
+        <div class = 'col-lg-4 col-md-4 col-sm-10 col-xs-10'>
+            <h3 class = 'head_footer' style = 'margin-left:40px;font-weight:bolder'>Travel News</h3>
+            <ul class = 'list'>
+                <li>Latest about Travel</li>
+                <li>New about tours</li>
+                <li>Group Tours Discount</li>
+                <li>Honeymoon sweet</li>
+                <li>Packages tour</li>
+                <li>Special Coupons</li>
+            </ul>
+        </div>
+        <div class = 'col-lg-4 col-md-4 col-sm-10 col-xs-10'>
+            <h3 class = 'head_footer' style = 'margin-left:40px;font-weight:bolder'>Discover</h3>
+            <ul class = 'list'>
+                <li>About Safety</li>
+                <li>Social Connect</li>
+                <li>Help on topics</li>
+                <li>Site Maps</li>
+                <li>Traveli picks</li>
+                <li>Special Discounts</li>
+            </ul>
+        </div>
+        <div class = 'col-lg-4 col-md-4 col-sm-10 col-xs-10'>
+            <h3 class = 'head_footer' style = 'margin-left:40px;font-weight:bolder'>Mail Us At:</h3>
+            <button class="btn btn-default btn-lg" style = 'margin-left:40px'><span class="glyphicon glyphicon-envelope"></span></button><span class = 'mail'>traveli@travel.com</span>
+        </div>
+    </div>
+</footer>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,316 @@
+<!Doctype HTML>
+<html lang="en-US">
+<head>
+<meta charset = "UTF-8">
+<meta name="HandheldFriendly" content="true">
+<meta name="viewport" content="width=device-width, height=device-height, user-scalable=yes" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<link rel = 'stylesheet' href = 'assets/css/w3css.css'>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel = 'stylesheet' href = 'assets/css/template.css'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<section class = 'navigation'>
+<div class = 'row'>
+ <div class = 'col-lg-8 col-md-8 col-sm-10 col-xs-10' style = 'margin-top:5px;margin-bottom:5px'>
+    <span style = 'margin-left:60px'>My account </span>                                       
+     <span class = 'dropdown' style = 'margin-left:10px'>
+      <span class = 'dropdown-toggle' data-toggle = 'dropdown'>
+      Language<span class = 'caret'></span>  
+      </span>
+      <ul class = 'dropdown-menu'>
+          <li><a href = '#'>English</a></li>
+          <li><a href = '#'>Hindi</a></li>
+          <li><a href = '#'>Marathi</a></li>
+          <li><a href = '#'>Gujrati</a></li>
+          <li><a href = '#'>Telugu</a></li>
+      </ul>  
+    </span>
+</div>
+<div class = 'col-lg-4 col-md-4 col-sm-10 col-xs-10' style = 'margin-top:5px;'>
+   <span style = 'margin-right:30px'>Purchase</span>
+   <span class = 'form' data-toggle = 'modal' data-target = '#login'>Login </span>
+     <div class = 'modal fade' id = 'login' role = 'dialog'>
+         <div class = 'modal-dialog modal-sm'>
+           <div class = 'modal-content'>
+               <div class = 'modal-header'>
+                 <h4 class = 'text-center modal-title'>Login Form</h4>
+               </div>
+               <div class = 'modal-body'>
+                   <button class = 'btn btn-primary' style = 'width:100%'>Login using Facebook</button>
+                   <button class = 'btn btn-danger' style = 'width:100%;margin-top:10px'>Login using Google</button>
+                   <div class = 'text'>Or</div>
+                    <div class = 'input-group'>
+                      <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span><input type="email" class="form-control" placeholder="Email">
+                   </div>
+                   <div class = 'input-group'>
+                      <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span><input type="password" class="form-control" name="password" placeholder="Password">
+                   </div>
+               </div>
+               <div class = 'modal-footer'>
+               <button data-dismiss = 'modal' class = 'btn btn-success submit'>Submit</button>
+               </div>
+             </div>
+         </div>
+     </div>
+    <span class = 'form' data-toggle = 'modal' data-target = '#register'>Register </span>
+      <div class = 'modal fade' id = 'register' role ='dialog'>
+        <div class = 'modal-dialog modal-sm'>
+            <div class = 'modal-content'>
+                <div class = 'modal-header'>
+                 <h4 class = 'modal-title text-center'>Register</h4>
+                </div>
+                <div class = 'modal-body'>
+                    <div class = 'input-group'>
+                    <span class = 'input-group-addon'><i class = 'glyphicon glyphicon-user'></i></span>
+                    <input type = 'text' class = 'form-control' placeholder= 'First Name'>                 
+                    </div>
+                    <div class = 'input-group'>
+                    <span class = 'input-group-addon'><i class = 'glyphicon glyphicon-user'></i></span>
+                    <input type = 'text' class = 'form-control' placeholder= 'Last Name'>                 
+                    </div>
+                    <div class = 'input-group'>
+                    <span class = 'input-group-addon'><i class = 'glyphicon glyphicon-envelope'></i></span>
+                    <input type = 'email' class = 'form-control' placeholder= 'Email'>                 
+                    </div>
+                    <div class = 'input-group'>
+                    <span class = 'input-group-addon'><i class = 'glyphicon glyphicon-lock'></i></span>
+                    <input type = 'password' class = 'form-control' placeholder= 'Password'>                 
+                    </div>
+                </div>
+                <div class = 'modal-footer'>
+                    <button class = 'btn btn-success text-center submit' data-dismiss = 'modal'>Submit</button>
+                </div>
+            </div>
+        </div>
+      </div>
+</div>
+</div>    
+</section>
+<nav class = 'navbar navbar-inverse' data-spy = 'affix' data-offset-top = '197'>
+    <ul class = 'nav navbar-nav'>
+        <li><a href="template.html" class = 'links'>Home</a></li>
+        <li><a class = 'dropdown-toggle links' data-toggle = 'dropdown' href="#">Hotels<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="hotels.html" class = 'links'>Listings</a></li>
+              <li><a href="details_hotel.html" class = 'links'>Details Page</a></li>
+              <li><a href="bookings.html" class = 'links'>Bookings Page</a></li>
+            </ul>
+        </li>
+        <li><a class = 'dropdown-toggle links' data-toggle = 'dropdown' href="#">Flights<span class = 'caret'></span></a>
+            <ul class = 'dropdown-menu'>
+                <li><a href = 'flight.html' class = 'links'>Listings</a></li>
+                <li><a href = 'details_flight.html' class = 'links'>Details Page</a></li>
+                <li><a href="bookings_flight.html" class = 'links'>Bookings Page</a></li>
+            </ul>
+        </li>
+        <li><a class = 'dropdown-toggle links' data-toggle = 'dropdown' href="#">Tours<span class = 'caret'></span></a>
+           <ul class = 'dropdown-menu'>
+                <li><a href = 'tours.html' class = 'links'>Listings</a></li>
+                <li><a href = 'details_tour.html' class = 'links'>Details Page</a></li>
+                <li><a href="bookings_tour.html" class = 'links'>Bookings Page</a></li>
+            </ul>
+        </li>
+        <li><a href="template.html#about" class = 'links'>About Us </a></li>
+        <li><a href="#contact" class = 'links'>Contact Us</a></li>
+    </ul>
+    <span class = 'logo'><span style = 'font-size:70px'>&Tscr;</span>RAVEL-<span style = 'font-size:55px'>&Iscr;</span><img src = 'assets/images/travel.png' class = 'icon'/></span>
+</nav>
+<section class = 'head_bar'>
+    <article class = 'hotel_search'><h3 style = 'margin-top:5px'>Tour Booking Page</h3></article>    
+</section>
+<div class = 'main'>
+<section>
+    <div class = 'row'>
+        <div class = 'col-lg-8 col-md-8 col-sm-12 col-xs-12'>
+           <h4 class = 'head'>Hotel Booking</h4> 
+            <div class = 'w3-card-4 w3-white personal_info'>
+                <h4 class = 'head'><ins>Personal Information:</ins></h4>
+                <div class = 'row' style = 'margin-top:10px;'>
+                    <div class = 'col-lg-6 col-md-6 col-sm-10 col-xs-10'>
+                        <h4 class = 'w3-text-gray labels'>First Name:</h4>
+                        <input type = 'text' class = 'w3-gray w3-border inputs' name = 'firstname'>
+                    </div>
+                    <div class = 'col-lg-6 col-md-6 col-sm-10 col-xs-10'>
+                        <h4 class = 'w3-text-gray labels'>Last Name:</h4>
+                        <input type = 'text' class = 'w3-gray w3-border inputs' name = 'lastname'>
+                    </div>
+                </div>
+                <div class = 'row'>
+                    <div class = 'col-lg-6 col-md-6 col-sm-10 col-xs-10'>
+                        <h4 class = 'w3-text-gray labels'>Email:</h4>
+                        <input type = 'email' class = 'w3-gray w3-border inputs' name = 'email'>
+                    </div>
+                    <div class = 'col-lg-6 col-md-6 col-sm-10 col-xs-10'>
+                        <h4 class = 'w3-text-gray labels'>Confirmed Email:</h4>
+                        <input type = 'email'  class = 'w3-gray w3-border inputs' name = 'mail_conf'>
+                    </div>
+                </div>
+                <div class = 'row'>
+                    <div class = 'col-lg-6 col-md-6 col-sm-10 col-xs-10'>
+                        <h4 class = 'w3-text-gray labels'>Country:</h4>
+                        <select class = 'w3-gray w3-border inputs' name = 'country'>
+                            <option>India</option> <option>Japan</option>
+                            <option>Rome</option> <option>Australia</option>
+                            <option>USA</option>  <option>Singapore</option>
+                            <option>Mauritius</option> <option>Dubai</option>
+                        </select>
+                    </div>
+                    <div class = 'col-lg-6 col-md-6 col-sm-10 col-xs-10'>
+                        <h4 class = 'w3-text-gray labels'>Mobile :</h4>
+                        <input type = 'tel' maxlength = '10' class = 'w3-gray w3-border inputs' name = 'mobile'>
+                    </div>
+                </div>
+               <hr style = 'border:1px solid black'>
+                <h4 class = 'head'><ins>Credit Card Information:</ins></h4>
+                <div class = 'row' style = 'margin-top:10px;'>
+                    <div class = 'col-lg-6 col-md-6 col-sm-10 col-xs-10'>
+                        <h4 class = 'w3-text-gray labels'>Card Type:</h4>
+                        <select class = 'w3-gray w3-border inputs' name = 'card'>
+                            <option>Master Card</option> <option>Visa</option> <option>Issuer</option>
+                        </select>
+                    </div>
+                    <div class = 'col-lg-6 col-md-6 col-sm-10 col-xs-10'>
+                        <h4 class = 'w3-text-gray labels'>Card Holder Name:</h4>
+                        <input type = 'text' class = 'w3-gray w3-border inputs' name = 'card_name'>
+                    </div>
+                </div>
+                <div class = 'row'>
+                    <div class = 'col-lg-6 col-md-6 col-sm-10 col-xs-10'>
+                        <h4 class = 'w3-text-gray labels'>Card Number:</h4>
+                        <input type = 'number' class = 'w3-gray w3-border inputs' name = 'card_number'>
+                    </div>
+                    <div class = 'col-lg-6 col-md-6 col-sm-10 col-xs-10'>
+                        <h4 class = 'w3-text-gray labels'>Card Identification Number:</h4>
+                        <input type = 'number'  class = 'w3-gray w3-border inputs' name = 'conf_number'>
+                    </div>
+                </div>
+                <div class = 'row'>
+                    <div class = 'col-lg-6 col-md-6 col-sm-10 col-xs-10'>
+                        <h4 class = 'w3-text-gray labels'>Expiry Date:</h4>
+                        <input type = 'month' class = 'w3-gray w3-border inputs' name = 'date'>
+                    </div>
+                    <div class = 'col-lg-6 col-md-6 col-sm-10 col-xs-10'>
+                        <h4 class = 'w3-text-gray labels'>Billing Zip Code :</h4>
+                        <input type = 'number' class = 'w3-gray w3-border inputs' name = 'code'>
+                    </div>
+                </div>
+                <div class = 'text-center confirm'>
+                    <button class="btn btn-success btn-lg confirm_book">Confirm Booking</button>
+                </div>
+                </div>
+        </div>
+        <div class = 'col-lg-4 col-md-4 col-sm-8 col-xs-8'>
+            <h3 class = 'heading'>Other Tours available are</h3>
+            <div class = 'row'>
+                <div class = 'col-lg-6 col-md-6 col-sm-12 col-xs-12'>
+                    <div class = 'w3-card-4 w3-display-container card_tour'>
+                        <img src = 'assets/images/travel2.jpg' class = 'tour_img_book'>
+                    </div>
+                </div>
+                <div class = 'col-lg-6 col-md-6 col-sm-12 col-xs-12'>
+                   <div class = 'w3-card-4 w3-display-container card_tour'>
+                       <img src = 'assets/images/travel3.jpg' class = 'tour_img_book'>
+                    </div>
+                </div>
+            </div>
+            <div class = 'row' style = 'margin-top:20px;'>
+                <div class = 'col-lg-6 col-md-6 col-sm-12 col-xs-12'>
+                    <div class = 'w3-card-4 w3-display-container card_tour'>
+                        <img src = 'assets/images/travel4.jpg' class = 'tour_img_book'>
+                    </div>
+                </div>
+                <div class = 'col-lg-6 col-md-6 col-sm-12 col-xs-12'>
+                   <div class = 'w3-card-4 w3-display-container card_tour'>
+                       <img src = 'assets/images/travel5.jpg' class = 'tour_img_book'>
+                    </div>
+                </div>
+            </div>
+            <div class = 'row' style = 'margin-top:20px;'>
+                <div class = 'col-lg-6 col-md-6 col-sm-12 col-xs-12'>
+                    <div class = 'w3-card-4 w3-display-container card_tour'>
+                        <img src = 'assets/images/travel6.jpg' class = 'tour_img_book'>
+                    </div>
+                </div>
+                <div class = 'col-lg-6 col-md-6 col-sm-12 col-xs-12'>
+                   <div class = 'w3-card-4 w3-display-container card_tour'>
+                       <img src = 'assets/images/hny3.jpg' class = 'tour_img_book'>
+                    </div>
+                </div>
+            </div>
+            <div class = 'row' style = 'margin-top:20px;'>
+                <div class = 'col-lg-6 col-md-6 col-sm-12 col-xs-12'>
+                    <div class = 'w3-card-4 w3-display-container card_tour'>
+                        <img src = 'assets/images/hny2.jpg' class = 'tour_img_book'>
+                    </div>
+                </div>
+                <div class = 'col-lg-6 col-md-6 col-sm-12 col-xs-12'>
+                   <div class = 'w3-card-4 w3-display-container card_tour'>
+                       <img src = 'assets/images/travel1.jpg' class = 'tour_img_book'>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+<footer>
+    <div class = 'row' id = 'contact'>
+        <div class = 'col-lg-4 col-md-4 col-sm-8 col-xs-8'>
+            <span class = 'logo' style = 'margin-left:30px'><span style = 'font-size:70px'>&Tscr;</span>RAVEL-<span style = 'font-size:55px'>&Iscr;</span><img src = 'assets/images/travel.png' class = 'icon'/></span>
+        </div>
+        <div class = 'col-lg-4 col-md-4 col-sm-10 col-xs-10'>
+            <div style = 'margin-top:50px'>
+                <span class = 'head_footer'>Contact Us
+                    <button><i class="fa fa-linkedin-square link"></i></button>
+                    <button><i class="fa fa-twitter-square tweet"></i></button>
+                    <button><i class="fa fa-facebook-official fb"></i></button>
+                    <button><i class="fa fa-google-plus-official gp"></i></button>
+                    <button><i class="fa fa-vimeo-square vm"></i></button>
+                    <button><i class="fa fa-flickr fc"></i></button>
+                </span>
+            </div>     
+        </div>
+        <div class = 'col-lg-4 col-md-4 col-sm-10 col-xs-10'>
+            <div style = 'margin-top:50px'>
+                <span class = 'head_footer'>Call Us at 
+                    <button type="button" class="btn btn-default btn-lg"><span class="glyphicon glyphicon-phone"></span> Phone</button> 6134-3423-1234
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class = 'row'>
+        <div class = 'col-lg-4 col-md-4 col-sm-10 col-xs-10'>
+            <h3 class = 'head_footer' style = 'margin-left:40px;font-weight:bolder'>Travel News</h3>
+            <ul class = 'list'>
+                <li>Latest about Travel</li>
+                <li>New about tours</li>
+                <li>Group Tours Discount</li>
+                <li>Honeymoon sweet</li>
+                <li>Packages tour</li>
+                <li>Special Coupons</li>
+            </ul>
+        </div>
+        <div class = 'col-lg-4 col-md-4 col-sm-10 col-xs-10'>
+            <h3 class = 'head_footer' style = 'margin-left:40px;font-weight:bolder'>Discover</h3>
+            <ul class = 'list'>
+                <li>About Safety</li>
+                <li>Social Connect</li>
+                <li>Help on topics</li>
+                <li>Site Maps</li>
+                <li>Traveli picks</li>
+                <li>Special Discounts</li>
+            </ul>
+        </div>
+        <div class = 'col-lg-4 col-md-4 col-sm-10 col-xs-10'>
+            <h3 class = 'head_footer' style = 'margin-left:40px;font-weight:bolder'>Mail Us At:</h3>
+            <button class="btn btn-default btn-lg" style = 'margin-left:40px'><span class="glyphicon glyphicon-envelope"></span></button><span class = 'mail'>traveli@travel.com</span>
+        </div>
+    </div>
+</footer>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
